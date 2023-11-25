@@ -7,7 +7,10 @@
       "config": { "maxLambdaSize": "50mb" }
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "app/wsgi.py" }],
+  "routes": [
+  { "src": "^/admin/(.*)", "dest": "/app/wsgi.py" },
+  { "src": "/(.*)", "dest": "/app/wsgi.py" }
+  ],
   "env": {
     "DJANGO_SETTINGS_MODULE": "app.settings"
   }
