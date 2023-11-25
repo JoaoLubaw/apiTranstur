@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api": {
+      "handler": "vercel/main.api",
+      "runtime": "python3.8",
+      "includeFiles": "api/**"
+    }
+  },
+  "routes": [
+    { "src": "/api/cidades/.*", "dest": "/api" },
+    { "src": "/api/contatos/.*", "dest": "/api" },
+    { "src": "/api/infos/.*", "dest": "/api" },
+    { "src": "/api/pontosfisicos/.*", "dest": "/api" },
+    { "src": "/api/slides/.*", "dest": "/api" },
+    { "src": "/.*", "dest": "/vercel/main.api" }
+  ]
+}
