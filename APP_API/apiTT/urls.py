@@ -6,19 +6,19 @@ from .views import PontoFisicoRetrieveUpdateDestroyView, PontoFisicoListCreateVi
 from .views import SlideListCreateView, SlideRetrieveUpdateDestroyView
 
 urlpatterns = [
-    path('app/cidades/', CidadeListCreateView.as_view(), name='cidade-list-create'),
-    path('app/cidades/<int:pk>/', CidadeRetrieveUpdateDestroyView.as_view(), name='cidade-retrieve-update-destroy'),
+    path('api/cidades/', CidadeListCreateView.as_view(), name='cidade-list-create'),
+    path('api/cidades/<int:pk>/', CidadeRetrieveUpdateDestroyView.as_view(), name='cidade-retrieve-update-destroy'),
 
-    path('app/contatos/', ContatoListCreateView.as_view(), name='contato-list-create'),
-    path('app/contatos/<int:pk>/', ContatoRetrieveUpdateDestroyView.as_view(), name='contato-retrieve-update-destroy'),
+    path('api/contatos/', ContatoListCreateView.as_view(), name='contato-list-create'),
+    path('api/contatos/<int:pk>/', ContatoRetrieveUpdateDestroyView.as_view(), name='contato-retrieve-update-destroy'),
 
-    path('app/infos/', InfoListCreateView.as_view(), name='info-list-create'),
-    path('app/infos/<int:pk>/', InfoRetrieveUpdateDestroyView.as_view(), name='info-retrieve-update-destroy'),
+    path('api/infos/', InfoListCreateView.as_view(), name='info-list-create'),
+    path('api/infos/<int:pk>/', InfoRetrieveUpdateDestroyView.as_view(), name='info-retrieve-update-destroy'),
 
-    path('app/pontosfisicos/', PontoFisicoListCreateView.as_view(), name='pontofisico-list-create'),
-    path('app/pontosfisicos/<int:pk>/', PontoFisicoRetrieveUpdateDestroyView.as_view(), name='pontofisico-retrieve-'
+    path('api/pontosfisicos/', PontoFisicoListCreateView.as_view(), name='pontofisico-list-create'),
+    path('api/pontosfisicos/<int:pk>/', PontoFisicoRetrieveUpdateDestroyView.as_view(), name='pontofisico-retrieve-'
                                                                                              'update-destroy'),
-    path('app/slides/', SlideListCreateView.as_view(), name='slide-list-create'),
-    path('app/slides/<int:pk>/', SlideRetrieveUpdateDestroyView.as_view(), name='slide-retrieve-update-destroy'),
+    path('api/slides/', SlideListCreateView.as_view(), name='slide-list-create'),
+    path('api/slides/<int:pk>/', SlideRetrieveUpdateDestroyView.as_view(), name='slide-retrieve-update-destroy'),
 
 ]
