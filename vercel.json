@@ -1,5 +1,8 @@
 {
   "functions": {
-    "api": "api/manage.py"
+    "api": {
+      "handler": "api/manage.py",
+      "runtime": "python3.11"
+    }
   }
 }
