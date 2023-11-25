@@ -2,12 +2,12 @@
   "version": 2,
   "builds": [
     {
-      "src": "apiTT/wsgi.py",
+      "src": "app/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "50mb" }
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "/app/wsgi.py" }],
+  "routes": [{ "src": "/(.*)", "dest": "app/wsgi.py" }],
   "env": {
     "DJANGO_SETTINGS_MODULE": "app.settings"
   }
