@@ -1,5 +1,5 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/manage.py" }
-  ]
+  "functions": {
+    "api": "caminho/para/seu/arquivo/manage.py"
+  }
 }
