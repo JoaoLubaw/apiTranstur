@@ -7,9 +7,7 @@
       "config": { "maxLambdaSize": "50mb" }
     }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/apiTT/asgi.py" }
-  ],
+  "routes": [{ "src": "/(.*)", "dest": "/app/asgi.py" }],
   "env": {
     "DJANGO_SETTINGS_MODULE": "app.settings"
   }
