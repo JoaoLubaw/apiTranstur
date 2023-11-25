@@ -3,8 +3,7 @@
     "api": {
       "runtime": "python3.11",
       "includeFiles": ["api/**"],
-      "excludeFiles": ["api/**/*.pyc"],
-      "src": "api"
+      "excludeFiles": ["api/**/*.pyc"]
     }
   }
 }
