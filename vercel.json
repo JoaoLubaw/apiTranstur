@@ -1,8 +1,10 @@
 {
   "functions": {
     "api": {
-      "handler": "api/manage.py",
-      "runtime": "python3.11"
+      "runtime": "python3.11",
+      "includeFiles": ["api/**"],
+      "excludeFiles": ["api/**/*.pyc"],
+      "src": "api"
     }
   }
 }
