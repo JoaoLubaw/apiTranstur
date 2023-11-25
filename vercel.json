@@ -1,9 +1,0 @@
-{
-  "functions": {
-    "api": {
-      "runtime": "python3.8",
-      "includeFiles": "api/**",
-      "excludeFiles": "api/**/*.pyc"
-    }
-  }
-}
