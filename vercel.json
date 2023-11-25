@@ -1,5 +1,5 @@
 {
   "functions": {
-    "api": "caminho/para/seu/arquivo/manage.py"
+    "api": "api/manage.py"
   }
 }
