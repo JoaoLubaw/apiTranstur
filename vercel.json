@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "builds": [{ "src": "app/asgi.py", "use": "@now/python" }],
+  "builds": [
+    {
+      "src": "apiTT/asgi.py",
+      "use": "@now/python",
+      "config": { "maxLambdaSize": "50mb" }
+    }
+  ],
   "routes": [
-    { "src": "/api/.*", "dest": "/app/asgi.py" },
-    { "src": "/.*", "dest": "/app/asgi.py" }
-  ]
+    { "src": "/(.*)", "dest": "/apiTT/asgi.py" }
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "app.settings"
+  }
 }
