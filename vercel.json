@@ -9,7 +9,7 @@
       "src": "APP_API/build_files.sh",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "APP_API/staticfiles_build"
+        "distDir": "staticfiles_build"
       }
     }
   ],
