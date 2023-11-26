@@ -22,7 +22,6 @@ env/
 Thumbs.db
 
 # Arquivos gerados durante a execução do projeto
-/static/
 /media/
 
 # Arquivos de configuração local
