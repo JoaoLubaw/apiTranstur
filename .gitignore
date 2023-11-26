@@ -29,7 +29,6 @@ settings_local.py
 
 # Logs e arquivos temporários
 *.log
-*.sqlite3
 *.db
 *.bak
 *.swp

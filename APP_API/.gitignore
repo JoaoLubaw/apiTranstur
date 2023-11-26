@@ -8,7 +8,6 @@ env/
 __pycache__/
 
 # Diretório de dados do banco de dados SQLite
-*.sqlite3
 
 # Diretório de arquivos estáticos coletados
 
