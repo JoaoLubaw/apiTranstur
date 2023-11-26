@@ -1,5 +1,7 @@
 {
-  "version": 2,
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "backend.settings"
+  },
   "builds": [
     {
       "src": "APP_API/backend/wsgi.py",
@@ -10,7 +12,7 @@
       "src": "build_files.sh",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "staticfiles_build"
+        "distDir": "APP_API/staticfiles_build"
       }
     }
   ],
@@ -23,8 +25,5 @@
       "src": "/(.*)",
       "dest": "APP_API/backend/wsgi.py"
     }
-  ],
-  "hooks": {
-    "postBuild": "cp -r staticfiles_build/* APP_API/backend"
-  }
+  ]
 }
