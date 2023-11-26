@@ -23,7 +23,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "APP_API/backend/wsgi.py"
+      "dest": "/(.*)"
     }
   ],
   "rewrites": [{ "source": "/(.*)", "destination": "APP_API/backend/wsgi.py" }]
