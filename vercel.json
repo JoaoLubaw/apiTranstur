@@ -1,6 +1,6 @@
 {
   "env": {
-    "DJANGO_SETTINGS_MODULE": "backend.settings"
+    "DJANGO_SETTINGS_MODULE": "APP_API.backend.settings"
   },
   "builds": [
     {
