@@ -4,7 +4,7 @@
   },
   "builds": [
     {
-      "src": "APP_API/backend/wsgi.py",
+      "src": "APP_API/backend/manage.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
     },
