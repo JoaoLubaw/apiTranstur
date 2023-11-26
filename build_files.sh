@@ -7,6 +7,6 @@ echo "BUILD START"
 pip install -r requirements.txt
 
 # Execute o collectstatic do Django
-python3 APP_API/manage.py collectstatic --noinput --clear
+python3 APP_API/manage.py collectstatic
 
 echo "BUILD END"
