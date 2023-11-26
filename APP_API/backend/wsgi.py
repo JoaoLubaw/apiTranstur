@@ -4,7 +4,7 @@ import os
 import sys
 
 # Adiciona o diretório raiz do projeto ao caminho de pesquisa de módulos do Python
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'apiTT'))
 
 from whitenoise import WhiteNoise
 from django.core.wsgi import get_wsgi_application
