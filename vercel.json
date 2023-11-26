@@ -25,5 +25,8 @@
     "src": "/(.*)",
     "dest": "APP_API/backend/wsgi.py"
   }
-]
+],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "APP_API/backend/wsgi.py" }
+  ]
 }
