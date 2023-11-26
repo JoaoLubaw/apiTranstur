@@ -4,8 +4,11 @@ from .views import ContatoListCreateView, ContatoRetrieveUpdateDestroyView
 from .views import InfoListCreateView, InfoRetrieveUpdateDestroyView
 from .views import PontoFisicoRetrieveUpdateDestroyView, PontoFisicoListCreateView
 from .views import SlideListCreateView, SlideRetrieveUpdateDestroyView
+from .views import home
 
 urlpatterns = [
+    path('', home, name='home'),
+
     path('api/cidades/', CidadeListCreateView.as_view(), name='cidade-list-create'),
     path('api/cidades/<int:pk>/', CidadeRetrieveUpdateDestroyView.as_view(), name='cidade-retrieve-update-destroy'),
 
