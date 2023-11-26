@@ -16,5 +16,14 @@
       }
     }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "APP_API/backend/wsgi.py" }]
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "APP_API/staticfiles_build/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "APP_API/backend/wsgi.py"
+    }
+  ]
 }
