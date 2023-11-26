@@ -1,12 +1,15 @@
 {
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "backend.settings"
+  },
   "builds": [
     {
       "src": "APP_API/backend/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.8" }
     },
     {
-      "src": "APP_API/build_files.sh",
+      "src": "build_files.sh",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "staticfiles_build"
@@ -15,15 +18,12 @@
   ],
   "routes": [
     {
-      "src": "APP_API/static/(.*)",
+      "src": "/static/(.*)",
       "dest": "APP_API/static/$1"
     },
     {
       "src": "/(.*)",
       "dest": "APP_API/backend/wsgi.py"
     }
-  ],
-  "env": {
-    "DJANGO_SETTINGS_MODULE": "backend.settings"
-  }
+  ]
 }
