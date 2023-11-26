@@ -18,9 +18,9 @@
   ],
   "routes": [
   {
-    "src": "/static/(.*)",
-    "dest": "APP_API/staticfiles_build/static/$1"
-  },
+  "src": "/static/(.*)",
+  "dest": "APP_API/staticfiles_build/static/$1"
+},
   {
     "src": "/(.*)",
     "dest": "APP_API/backend/wsgi.py"
