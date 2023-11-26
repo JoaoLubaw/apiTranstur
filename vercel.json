@@ -12,7 +12,7 @@
       "src": "build_files.sh",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "APP_API/staticfiles"
+        "distDir": "APP_API/staticfiles_build"
       }
     }
   ],
