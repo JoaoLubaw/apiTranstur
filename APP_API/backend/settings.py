@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
 
-DEBUG = True
 # Application definition
 
 INSTALLED_APPS = [
