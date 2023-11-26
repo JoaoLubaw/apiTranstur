@@ -1,7 +1,5 @@
 {
-  "env": {
-    "DJANGO_SETTINGS_MODULE": "backend.settings"
-  },
+  "version": 2,
   "builds": [
     {
       "src": "APP_API/backend/wsgi.py",
@@ -25,5 +23,8 @@
       "src": "/(.*)",
       "dest": "APP_API/backend/wsgi.py"
     }
-  ]
+  ],
+  "hooks": {
+    "postBuild": "cp -r staticfiles_build/* APP_API/backend"
+  }
 }
