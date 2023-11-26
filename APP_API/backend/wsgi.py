@@ -26,7 +26,7 @@ if BASE_DIR is None:
 application = get_wsgi_application()
 
 # Configure o WhiteNoise após a configuração da aplicação WSGI
-application = WhiteNoise(application, root=os.path.join(BASE_DIR, 'staticfiles_build', 'static'))
+application = WhiteNoise(application, root=os.path.join(os.path.dirname(__file__), 'staticfiles'))
 
 # Atribua a aplicação WSGI configurada ao 'app'
 app = application
