@@ -10,8 +10,8 @@ def nome_imagem(instance, filename):
 class PontoFisico(models.Model):
     PF_ID = models.AutoField(primary_key=True)
     Imagem = models.ImageField(upload_to=nome_imagem)
-    Endereco = models.CharField(max_length=400)
-    Maps = models.CharField(max_length=500, null=True)
+    Endereco = models.CharField(max_length=400, blank=True, null=True)
+    Maps = models.CharField(max_length=500, null=True, blank=True)
 
     @property
     def ImagemAdress(self):

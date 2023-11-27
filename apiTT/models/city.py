@@ -10,9 +10,9 @@ class Cidade(models.Model):
 class Ponto(models.Model):
     PontoID = models.AutoField(primary_key=True)
     City = models.ForeignKey(Cidade, on_delete=models.CASCADE, related_name="pontos")
-    Name = models.CharField(max_length=200, unique=True)
-    Maps = models.CharField(max_length=500, null=True)
-    Endereco = models.CharField(max_length=500, null=True)
+    Name = models.CharField(max_length=200)
+    Maps = models.CharField(max_length=500, null=True, blank=True)
+    Endereco = models.CharField(max_length=500, null=True, blank=True)
 
     def __str__(self):
         return self.Name
