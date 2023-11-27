@@ -3,6 +3,10 @@
 import os
 import sys
 
+# Adiciona o diretório ao caminho do sistema apenas em ambiente de produção
+if os.environ.get('ENV') == 'production':
+    sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 # Adiciona o diretório raiz do projeto ao caminho de pesquisa de módulos do Python
 sys.path.append(os.path.join(os.path.dirname(__file__), 'APP_API'))
 
